@@ -1,74 +1,74 @@
 
-# Cahier des Charges pour une Application Web
+# Project Specifications for a Web Application
 
 ## 1. Introduction
 
-Ce document sert de cahier des charges pour le développement d'une application web utilisant Java Spring Boot pour le backend et Angular pour le frontend. L'objectif est de créer une application robuste, performante et facile à utiliser.
+This document serves as the specifications for the development of a web application using Java Spring Boot for the backend and Angular for the frontend. The objective is to create a robust, high-performance, and user-friendly application.
 
-## 2. Objectif du Projet
+## 2. Project Objective
 
-Développement d'une application web destinée à fournir une plateforme interactive pour la gestion et le suivi de tâches personnelles et professionnelles.
+Development of a web application aimed at providing an interactive platform for managing and tracking personal and professional tasks.
 
-## 3. Fonctionnalités Principales
+## 3. Main Features
 
-### 3.1. Gestion de Tâches
-- Création, modification, et suppression de tâches.
-- Attribution de priorités et de délais pour chaque tâche.
+### 3.1. Task Management
+- Creation, modification, and deletion of tasks.
+- Assignment of priorities and deadlines for each task.
 
-### 3.2. Interface Utilisateur
-- Tableau de bord intuitif affichant les tâches.
-- Système de notification pour les tâches proches de leur échéance.
+### 3.2. User Interface
+- Intuitive dashboard displaying tasks.
+- Notification system for tasks approaching their deadline.
 
-### 3.3. Authentification et Sécurité
-- Système d'inscription et de connexion sécurisé.
-- Protection des données utilisateur via des protocoles de chiffrement.
+### 3.3. Authentication and Security
+- Secure registration and login system.
+- User data protection through encryption protocols.
 
-### 3.4. Reporting et Analytics
-- Génération de rapports sur la progression des tâches.
-- Outils d'analyse pour suivre la productivité.
+### 3.4. Reporting and Analytics
+- Reports on task progress.
+- Analytical tools to track productivity.
 
-## 4. Utilisateurs Cibles
+## 4. Target Users
 
-- Professionnels cherchant à gérer efficacement leurs tâches quotidiennes.
-- Étudiants nécessitant un outil de planification d'études.
+- Professionals seeking to efficiently manage their daily tasks.
+- Students in need of a study planning tool.
 
-## 5. Contraintes Techniques
+## 5. Technical Constraints
 
-- Backend : Java Spring Boot.
-- Frontend : Angular.
-- Base de données : MySQL ou MongoDB.
+- Backend: Java Spring Boot.
+- Frontend: Angular.
+- Database: MySQL or MongoDB.
 
-## 6. Intégrations Externes
+## 6. External Integrations
 
-- Intégration avec des calendriers externes (Google Calendar, Outlook).
+- Integration with external calendars (Google Calendar, Outlook).
 
-## 7. Sécurité et Conformité
+## 7. Security and Compliance
 
-- Conformité avec le RGPD pour la protection des données utilisateurs.
-- Mise en place de mesures anti-DDoS et de pare-feu.
+- GDPR compliance for user data protection.
+- Implementation of anti-DDoS measures and firewalls.
 
-## 8. Performances et Scalabilité
+## 8. Performance and Scalability
 
-- Capacité à gérer jusqu'à 10 000 utilisateurs simultanés.
-- Scalabilité horizontale pour ajouter des ressources en fonction de la demande.
+- Capability to handle up to 10,000 concurrent users.
+- Horizontal scalability to add resources as per demand.
 
-## 9. Interface Utilisateur
+## 9. User Interface
 
-- Design responsive adapté à tous les appareils.
-- Interface épurée et intuitive.
+- Responsive design suitable for all devices.
+- Clean and intuitive interface.
 
-## 10. Délais et Budget
+## 10. Timeline and Budget
 
-- Durée du projet : 6 mois.
-- Budget approximatif : 50 000 €.
+- Project duration: 6 months.
+- Approximate budget: €50,000.
 
-## 11. Maintenance et Support
+## 11. Maintenance and Support
 
-- Maintenance continue pour les mises à jour de sécurité.
-- Support utilisateur disponible via e-mail et chat en direct.
+- Ongoing maintenance for security updates.
+- User support available via email and live chat.
 
-## 12. Livrables
+## 12. Deliverables
 
-- Code source complet de l'application.
-- Documentation technique et manuel utilisateur.
-- Rapports de tests et d'analyse de performances.
+- Complete source code of the application.
+- Technical documentation and user manual.
+- Performance and analysis test reports.
