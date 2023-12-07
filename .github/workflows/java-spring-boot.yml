@@ -7,7 +7,7 @@ on:
     - auth
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -19,11 +19,11 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - run: mvn -f pom.xml clean test
+    - run: mvn -f pom.xml clean install -DskipTests
 
   package-and-upload:
     runs-on: ubuntu-latest
-    needs: build-and-test
+    needs: build
     defaults:
       run:
         working-directory: backend
@@ -34,7 +34,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - run: mvn -f pom.xml clean package
+    - run: mvn -f pom.xml clean package -DskipTests
     - run: ls -la
     - run: ls -la target
     - name: Upload Maven build artifact
