@@ -2,11 +2,13 @@ name: Angular CI
 
 on:
   push:
+    branches: [ "master" ]
     paths:
-      - 'frontend/**'
+      - './frontend/**'
   pull_request:
+    branches: [ "master" ]
     paths:
-      - 'frontend/**'
+      - './frontend/**'
 
 jobs:
   build:
@@ -22,7 +24,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd frontend
       - run: npm install
+        working-directory: ./frontend
       - run: npm run build
+        working-directory: ./frontend
       - run: npm run test
+        working-directory: ./frontend
+
