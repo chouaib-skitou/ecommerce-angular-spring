@@ -1,33 +1,30 @@
 name: Angular CI
 
+
 on:
   push:
-    branches: [ "master" ]
-    paths:
-      - './frontend/**'
-  pull_request:
-    branches: [ "master" ]
-    paths:
-      - './frontend/**'
+    branches:
+    - master
+    - auth
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm install
-        working-directory: ./frontend
-      - run: npm run build
-        working-directory: ./frontend
-      - run: npm run test
-        working-directory: ./frontend
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm run test:headless
+
+    - name: Build
+      run: npm run build:prod
 
